@@ -21,7 +21,8 @@
   <link rel="stylesheet" href="css/rodape.css">    
   <link rel="stylesheet" href="css/dialogNewsletter.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, " />
+    <!--maximum-scale=1.0, user-scalable=no => deste jeito o zoom não é permitido -->
 </head>
 <body>
 
@@ -428,7 +429,10 @@
           </p>
         </div>
 
-        <video src="img/formacao-java.mp4" class="secaoInstitucional-video">
+        <video src="img/formacao-java.mp4" class="secaoInstitucional-video" controls>
+          <track src="img/legenda-portugues-brasil.vtt" kind="subtitles" srclang="pt-br" label="Português(Brasil)">
+          <!-- controls habilita os comandos do video na página
+              <track src="img/legenda-portugues-brasil.vtt" kind="subtitles" srclang="pt-br" label="Português(Brasil)"> => adiciona a ligenda, diz que é uma legenda com kind , especifica que é em português do Brasil com subtitles e coloca no nome da legenda com label. -->
         </video>
 
       </div>
