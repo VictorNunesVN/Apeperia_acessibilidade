@@ -102,6 +102,9 @@
 .secaoPlanos-plano-titulo--destaque {
   background-color: #B72E2E;
 }
+li {
+  list-style: none;
+}
 
 
 @media (min-width: 830px) {

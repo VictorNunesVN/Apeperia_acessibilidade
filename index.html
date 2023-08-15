@@ -121,7 +121,7 @@
           SOBRE
         </h1>
         <p class="secaoSobre-texto">
-          Criamos aplicativos personalizados de maneira diferente e para <b>todxs</b>!
+          Criamos aplicativos personalizados de maneira diferente e para <b>todas as pessoas</b>!
         </p>
         <p class="secaoSobre-texto">
           Preocupados com o modelo atual em que um aplicativo é criado entregue e a manutenção é vista como um custo extra para o cliente, decidimos criar um novo modelo de negócio, em que você assina nosso serviço, nós criamos o aplicativo e a manutenção já é inclusa no serviço. Dessa maneira você não se preocupa com atualização, é tudo por nossa conta.
@@ -342,13 +342,13 @@
           </p>
 
           <div class="contatoCampo contatoCampo--sucesso">
-            <label>Nome: </label>
-            <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
+            <label id="idnome">Nome: </label>
+            <input type="text" class="contatoCampo--validouFoi" placeholder="Digite o seu nome" for="idnome" required>
           </div>  
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Email: </label>
-            <input type="email" class="contatoCampo--validouErro" required>
+            <label id="idemail">Email: </label>
+            <input type="email" class="contatoCampo--validouErro" placeholder="Email" form="idemail" required>
             <span class="contatoCampo-msg contatoCampo-msg--erro">
               Você quis dizer <a href="#">gmail.com?</a>
             </span>
@@ -367,22 +367,22 @@
 
           <div class="contatoCampo">
             <label>Endereço: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
           </div>   
 
           <div class="contatoCampo">
             <label>Bairro: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
           </div>   
 
           <div class="contatoCampo">
             <label>Cidade: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
           </div>   
 
           <div class="contatoCampo">
             <label>Estado: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
           </div>   
 
           <div class="contatoCampo">
@@ -391,8 +391,8 @@
           </div>
 
           <div class="contatoCampo">
-            <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox">
-            <label class="contatoCampo-label">Receber destaques por email</label>
+            <input type="checkbox" id="receberEmail" checked value="receberDestaques" class="contatoCampo-checkbox">
+            <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
           </div>
 
           <div class="contatoCampo">
